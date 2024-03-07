@@ -12,3 +12,7 @@ jobs:
   deploy:
     needs: build
     uses: phaneendra-bangari/GitHubActionsCentral/.github/workflows/common_maven_deploy.yml@main
+    secrets:
+       host: ${{ secrets.DC_HOST }}
+       user: ${{ secrets.DC_USER }}
+       password: ${{ secrets.DC_KEY }}
