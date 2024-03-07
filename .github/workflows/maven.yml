@@ -9,3 +9,5 @@ on:
 jobs:
   build:
     uses: phaneendra-bangari/GitHubActionsCentral/.github/workflows/common_maven_build.yml@main
+  deploy:
+    uses: phaneendra-bangari/GitHubActionsCentral/.github/workflows/common_maven_deploy.yml@main
