@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     uses: phaneendra-bangari/GitHubActionsCentral/.github/workflows/common_maven_build.yml@main
+    with:
+      build-script: pom.xml
+      
   deploy:
     needs: build
     uses: phaneendra-bangari/GitHubActionsCentral/.github/workflows/common_maven_deploy.yml@main
